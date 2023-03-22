@@ -29,8 +29,14 @@ using ControleContas.Model;
 Conta conta3 = new Conta("654321", 2341.42m);
 Conta conta4 = new Conta("1234", 2341.42m);
 
-Console.WriteLine($"Conta: {conta3.Numero}; Saldo: {conta3.Saldo}");
+//Console.WriteLine($"Conta: {conta3.Numero}; Saldo: {conta3.Saldo}");
 
-Console.WriteLine($"O saldo total é: {conta3.SaldoTotal}");
+//Console.WriteLine($"O saldo total é: {conta3.SaldoTotal}");
 
-Console.WriteLine("A conta com maior saldo é: {0}", conta3.ContaMaiorSaldo);
+//Console.WriteLine("A conta com maior saldo é: {0}", conta3.ContaMaiorSaldo);
+
+Cliente cliente1 = new Cliente("Lucas", "173040267400", 2012);
+
+Console.WriteLine(cliente1.Cpf);
+Console.WriteLine(cliente1.Nome);
+Console.WriteLine(cliente1.AnoNascimento);
