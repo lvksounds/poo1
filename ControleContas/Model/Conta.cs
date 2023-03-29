@@ -48,5 +48,13 @@ namespace ControleContas.Model
         {
             get => _contaMaiorSaldo;
         }
+
+        public Cliente Titular { get; set; }
+
+        public void Deposito(decimal valor)
+        {
+            if(valor > 0)
+            _saldo += valor;
+        }
     }
 }
