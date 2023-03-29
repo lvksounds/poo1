@@ -55,6 +55,27 @@ namespace ControleContas.Model
         {
             if(valor > 0)
             _saldo += valor;
+            else
+            {
+                Console.WriteLine("Não é possivel fazer um depósito com um valor negativo.");
+            }
+        }
+
+        public void Saque(decimal valor)
+        {
+            if(valor <= 0)
+            {
+                Console.WriteLine("Valor invalido. Digite um valor maior que zero");
+            }
+            else if(Saldo < valor)
+            {
+                Console.WriteLine("Voce não possui saldo suficiente");
+            }
+            else
+            {
+                Saldo -= valor;
+                Console.WriteLine($"Valor sacado: R${valor}.\nValor atual: R${Saldo}");
+            }
         }
     }
 }
